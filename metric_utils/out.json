@@ -1,0 +1,13 @@
+{
+    "average hyp length": 3.3333333333333335,
+    "average ref length": 4.333333333333333,
+    "EmbeddingAverageCosineSimilairty": 0.9518119692802429,
+    "EmbeddingExtremeCosineSimilairty": 0.8580474853515625,
+    "GreedyMatchingScore": 0.9399456779162089,
+    "dist-1": 0.4,
+    "dist-2": 0.7142857142857143,
+    "BLEU": 66.33,
+    "P_BERT": 0.941832,
+    "R_BERT": 0.914623,
+    "F1_BERT": 0.927891
+}
