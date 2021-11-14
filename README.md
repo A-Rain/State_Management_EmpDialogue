@@ -1,5 +1,7 @@
 ## Source code for our paper "Empathetic Response Generation with State Management"
 
+this repository is maintained by both [Jun Gao](https://github.com/gaojun4ever/) and [Yuhan Liu](https://github.com/A-Rain) 
+
 ### Model Overview
 ![model](./img/model_arch_crop.jpg)
 
