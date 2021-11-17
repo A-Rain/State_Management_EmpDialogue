@@ -55,20 +55,12 @@ For training the LM-based model, you need to download ***bert-base-en*** and ***
 ```shell
 bash ./bash/train_LM.sh --gpt_path $GPT_DIR --bert_path $BERT_DIR --gpu_id 2 --epoch 5 --lr_NLU 0.00003 --lr_NLG 0.00008 --bsz_NLU 16 --bsz_NLG 16
 ```
-for example:
-```shell
-bash ./bash/train_LM.sh --gpt_path /home/liuyuhan/datasets/gpt2-small --bert_path /home/liuyuhan/datasets/bert-base-en bert-base-en --gpu_id 2 --epoch 5 --lr_NLU 0.00003 --lr_NLG 0.00008 --bsz_NLU 16 --bsz_NLG 16
-```
 
 For training the Trs-based model, we use [glove.6B.300d](https://nlp.stanford.edu/projects/glove/) as the pretrained word embeddings. You can run the following command to train model. Here `$GLOVE` is the glove embedding txt file.
 ```shell
 bash ./bash/train_Trs.sh --gpu_id 2 --epoch 15 --lr_NLU 0.00007 --lr_NLG 0.0015 --bsz_NLU 16 --bsz_NLG 16 --glove $GLOVE
 ```
 
-for example:
-```
-bash ./bash/train_Trs.sh --gpu_id 2 --epoch 15 --lr_NLU 0.00007 --lr_NLG 0.0015 --bsz_NLU 16 --bsz_NLG 16 --glove /home/liuyuhan/datasets/glove/glove.6B.300d.txt
-```
 
 ### Evaluate
 To generate the automatic metric results, firstly you need to make sure that [bert-score](https://github.com/Tiiiger/bert_score) is successfully installed. In our paper, we use ***roberta-large-en*** rescaled with baseline to calculate BERTScore. You can download ***roberta-large-en*** from [Hugginface](https://github.com/huggingface/transformers). For the rescaled_baseline file, we can download it from [here](https://github.com/Tiiiger/bert_score/blob/master/bert_score/rescale_baseline/en/roberta-large.tsv) and put it under the ***roberta-large-en*** model directory. 
