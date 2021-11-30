@@ -65,6 +65,7 @@ python train.py \
     --data_dir ${DATA_DIR} \
     --cache_dir ${CACHE_DIR} \
     --save_dir ${SAVE_DIR} \
+    --do_train \
     --do_eval \
     --use_gpu \
     --gpu_id ${GPU} \
