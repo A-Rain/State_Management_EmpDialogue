@@ -76,6 +76,3 @@ To evaluate Trs-based model, the command is:
 ```shell
 bash ./bash/eval.sh --hyp $hypothesis --ref ./data/empathetic/ref_tokenize.txt --out $result --bert $ROBERTA_DIR --gpu_id 0 --mode Trs
 ```
-
-### Acknowledgement
-submit to ICASSP 2022, under review
