@@ -1,4 +1,4 @@
-## Source code for our paper "Empathetic Response Generation with State Management"
+## Source code for our paper "EmoDM: Empathetic Response Generation with Emotion-aware Dialogue Management"
 
 
 ### Model Overview
